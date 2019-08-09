@@ -54,5 +54,6 @@
         android:textSize="18sp"
         android:text="Login"
         android:background="@drawable/buttonround"
+        android:backgroundTint="@color/colorPrimary"
         android:layout_height="wrap_content"/>
 </RelativeLayout>
