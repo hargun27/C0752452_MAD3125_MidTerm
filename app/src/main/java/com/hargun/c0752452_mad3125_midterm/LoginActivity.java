@@ -24,7 +24,7 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        getSupportActionBar().setTitle("Login");
+       // getSupportActionBar().setTitle("Login");
         txtEmail = (EditText) findViewById(R.id.txtEmail);
         txtPass = (EditText) findViewById(R.id.txtPass);
         btnLogin = (Button) findViewById(R.id.btnLogin);
