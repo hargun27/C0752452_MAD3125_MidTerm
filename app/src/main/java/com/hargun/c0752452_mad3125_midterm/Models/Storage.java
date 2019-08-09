@@ -1,6 +1,7 @@
-package com.hargun.c0752452_mad3125_midterm;
+package com.hargun.c0752452_mad3125_midterm.Models;
 import android.content.Context;
 import android.util.Log;
+
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -23,7 +24,7 @@ public class Storage {
         public String loadJSONFromAsset() {
             String json;
             try {
-                InputStream is = context.getAssets().open("data.json");
+                InputStream is = context.getAssets().open("spacex.json");
                 int size = is.available();
                 byte[] buffer = new byte[size];
                 int count = is.read(buffer);
@@ -94,12 +95,12 @@ public class Storage {
             mRocket.setRocket_name(rocket_name);
             mRocket.setRocket_type(rocket_type);
             mSpaceXFlight.setRocket(mRocket);
-            LaunchSite mLaunchSite = new LaunchSite();
+            Launch mLaunchSite = new Launch();
             mLaunchSite.setSite_id(site_id);
             mLaunchSite.setSite_name(site_name);
             mLaunchSite.setSite_name_long(site_name_long);
             mSpaceXFlight.setLaunchSite(mLaunchSite);
-            Links mLinks = new Links();
+            Link mLinks = new Link();
             mLinks.setMission_patch(mission_patch);
             mLinks.setMission_patch_small(mission_patch_small);
             mLinks.setArticle_link(article_link);

@@ -1,4 +1,4 @@
-package com.hargun.c0752452_mad3125_midterm;
+package com.hargun.c0752452_mad3125_midterm.Models;
 
 public class Row {
     String flightimage;
