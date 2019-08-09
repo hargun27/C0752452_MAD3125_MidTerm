@@ -37,21 +37,24 @@ public class LoginActivity extends AppCompatActivity {
                 btnLogin.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-                        mAuth.signInWithEmailAndPassword(txtEmail.getText().toString(), txtPass.getText().toString())
-                                .addOnCompleteListener(LoginActivity.this, new OnCompleteListener<AuthResult>() {
-                                    @Override
-                                    public void onComplete(@NonNull Task<AuthResult> task) {
-                                        if (task.isSuccessful()) {
-                                            // Sign in success.
-                                            startActivity(new Intent(LoginActivity.this, WelcomeActivity.class));
-                                        } else {
-                                            // If sign in fails, display a message to the user.
-                                            Toast.makeText(LoginActivity.this, "Authentication failed.",
-                                                    Toast.LENGTH_SHORT).show();
-                                        }
+                        startActivity(new Intent(LoginActivity.this, WelcomeActivity.class));
 
-                                    }
-                                });
+//                        mAuth.signInWithEmailAndPassword(txtEmail.getText().toString(), txtPass.getText().toString())
+//                                .addOnCompleteListener(LoginActivity.this, new OnCompleteListener<AuthResult>() {
+//                                    @Override
+//                                    public void onComplete(@NonNull Task<AuthResult> task) {
+//                                        if (task.isSuccessful()) {
+//                                            // Sign in success.
+//                                            Toast.makeText(LoginActivity.this, "Wokinggg", Toast.LENGTH_SHORT).show();
+//                                            startActivity(new Intent(LoginActivity.this, WelcomeActivity.class));
+//                                        } else {
+//                                            // If sign in fails, display a message to the user.
+//                                            Toast.makeText(LoginActivity.this, "Authentication failed.",
+//                                                    Toast.LENGTH_SHORT).show();
+//                                        }
+//
+//                                    }
+//                                });
                     }
                 });
             }
