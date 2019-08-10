@@ -42,7 +42,7 @@ public class Launch {
     public String toString() {
         return "Launch{" +
                 "site_id='" + site_id + '\'' +
-                ", site_name='" + site_name + '\'' +
+                ", site_name ='" + site_name + '\'' +
                 ", site_name_long='" + site_name_long + '\'' +
                 '}';
     }
