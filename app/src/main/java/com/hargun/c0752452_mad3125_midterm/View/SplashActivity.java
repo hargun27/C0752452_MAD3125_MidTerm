@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.os.Handler;
 
 import com.hargun.c0752452_mad3125_midterm.R;
-
+//splash screen
 public class SplashActivity extends AppCompatActivity {
 
     @Override
@@ -20,6 +20,7 @@ public class SplashActivity extends AppCompatActivity {
             @Override
             public void run() {
                 startActivity(new Intent(SplashActivity.this, LoginActivity.class));
+                //login to home screen
                 finish();
             }
         },3000);
