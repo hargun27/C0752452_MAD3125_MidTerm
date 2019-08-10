@@ -41,7 +41,7 @@ public class MoviesAdapter extends RecyclerView.Adapter<MoviesAdapter.MyViewHold
     }
 
     public MoviesAdapter(Context context, List<Row> flightRowList, WelcomeActivity welcomeActivity) {
-    }
+    };
 
 
     @NonNull
